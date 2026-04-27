@@ -6,8 +6,6 @@ import { BiCategory } from "react-icons/bi";
 import { FiActivity } from "react-icons/fi";
 import { LiaWalletSolid } from "react-icons/lia";
 import { LuChartNoAxesCombined } from "react-icons/lu";
-
-
 import '../css/Sidebar.css'
 const Sidebar = () => {
   return (
