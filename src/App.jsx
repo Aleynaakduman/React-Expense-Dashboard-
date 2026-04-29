@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
 import { BrowserRouter } from 'react-router-dom';
 import Table from "./pages/Table"
+import Tablo from "./pages/Tablo"
 function App() {
  
   return (
@@ -20,6 +21,7 @@ function App() {
       
       <div className="page-container">
          <Table/>
+         <Tablo/>
       </div>
 
        

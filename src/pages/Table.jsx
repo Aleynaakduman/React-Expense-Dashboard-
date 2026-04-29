@@ -6,6 +6,7 @@ import { SlCalender } from "react-icons/sl";
 import '../css/Table.css'
 
 
+
 function Table() {
   return (
     <div className="table-container" >
@@ -125,7 +126,7 @@ function Table() {
         </div>
         
         <div className="container-content">
-          <h4 style={{ margin: '10px 0 -15px 10px' }} >Kategori Dağılımı</h4>
+          <h4 style={{ margin: '10px 0 -15px 10px' }}  >Kategori Dağılımı</h4>
           <div className="container-card2">
          
           <div className="daire" style={{
@@ -179,7 +180,10 @@ function Table() {
         </div>
       </div>
 
+        
 
+
+      
 
 
     </div>

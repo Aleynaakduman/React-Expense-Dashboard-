@@ -1,30 +1,33 @@
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #F8FAFC;
 }
 
 
-.app-container{
+.app-container {
   display: flex;
   min-height: 100vh;
- 
- 
+
+
 
 }
 
-.main-container{
+.main-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-   margin-left: 20px;
+  margin-left: 14%;
+  width: 86%;
+  padding: 20px;
+  min-height: 100vh;
 }
 
-.page-container{
+.page-container {
   flex: 8000000;
-  margin-left:2px;
+  margin-left: 2px;
 }
