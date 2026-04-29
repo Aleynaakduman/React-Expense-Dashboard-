@@ -85,5 +85,10 @@ ul {
 
 }
 
+@media screen and (max-width:1024px) {
+    .sidebar-container{
+        width: 22%;
+    }
+}
 
 
