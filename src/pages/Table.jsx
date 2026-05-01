@@ -4,10 +4,20 @@ import { CiWallet, CiSearch } from "react-icons/ci";
 import { GrAnalytics } from "react-icons/gr";
 import { SlCalender } from "react-icons/sl";
 import '../css/Table.css'
-
+import {useEffect, useState} from 'react'
 
 
 function Table() {
+
+  const [rows, setRows] = useState([]);
+  useEffect(() => {
+    fetch('https://69f4f68efb098eb7f0b502f0.mockapi.io/api/expenses')
+    .then(ress => ress.json())
+    .then(data => setRows(data))
+  })
+
+const totalExpense = rows.reduce((sum, row) => sum + Number(row.amount),0);
+
   return (
     <div className="table-container" >
       {/*Harcama Kartları */}
@@ -15,7 +25,7 @@ function Table() {
         <div className="table-card1">
           <div className="card1-content">
             <p>Toplam Harcama</p>
-            <b>₺12.450,75</b>
+            <b>{totalExpense}</b>
             <div className="card1">
               <button> ↓8.5% </button>
               <p  >Geçen aya göre</p>
